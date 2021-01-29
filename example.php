@@ -1,3 +1,4 @@
+<?php
 require_once  "DAO.php";
 
 $d = new DAO();
@@ -26,3 +27,4 @@ if(isset($_POST['city_name']) && !empty($_POST['city_name'])){
    }
     
 }
+?>
