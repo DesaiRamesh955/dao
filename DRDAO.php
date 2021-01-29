@@ -135,5 +135,9 @@ class DRDAO{
             }
 
         }
+    
+       public function slugify($str){
+             return str_replace(".","",str_replace(" ","-",trim($str)));
+        }
 }
 ?>
