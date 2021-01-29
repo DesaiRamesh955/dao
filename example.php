@@ -1,6 +1,6 @@
-require_once  "DRDAO.php";
+require_once  "DAO.php";
 
-$d = new DRDAO();
+$d = new DAO();
 
 if(isset($_POST['city_name']) && !empty($_POST['city_name'])){
     extract($_POST); //extract variables from POST request
