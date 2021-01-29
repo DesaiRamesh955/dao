@@ -1,6 +1,6 @@
 <?php
 
-class DRDAO{
+class DAO{
 
     private $con;
         function __construct() 
