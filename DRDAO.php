@@ -2,13 +2,13 @@
 
 class DAO{
 
-    private $con;
+    private $con;//connection variable
         function __construct() 
         {
-            include_once '../include/db.php';
+            include_once '../include/db.php'; // Give path to your database config
         
-            $db = new DB();
-            $this->con = $db->connect();
+            $db = new DB(); // Create database class object
+            $this->con = $db->connect(); // call database connection function
             
         }
         
