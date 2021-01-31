@@ -136,7 +136,7 @@ class DAO{
 
         }
     
-       public function slugify($str){
+       public function slug($str){
              return str_replace(" ","-",preg_replace("/[^A-Za-z0-9-]+/"," ",strtolower(trim($str))));
         }
 }
