@@ -137,7 +137,7 @@ class DAO{
         }
     
        public function slugify($str){
-             return str_replace(".","",str_replace(" ","-",trim($str)));
+             return str_replace(" ","-",preg_replace("/[^A-Za-z0-9-]+/"," ",strtolower(trim($str))));
         }
 }
 ?>
